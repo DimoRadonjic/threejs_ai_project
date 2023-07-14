@@ -1,7 +1,8 @@
-import React from 'react';
 import { useSnapshot } from 'valtio';
 
 import state from '../store';
+
+import PropTypes from 'prop-types';
 
 const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
   const snap = useSnapshot(state);
@@ -29,6 +30,13 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
       />
     </div>
   );
+};
+
+Tab.propTypes = {
+  tab: PropTypes.func.isRequired,
+  isFilterTab: PropTypes.func.isRequired,
+  isActiveTab: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Tab;

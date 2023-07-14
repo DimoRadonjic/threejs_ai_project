@@ -5,6 +5,8 @@ import { useSnapshot } from 'valtio';
 
 import state from '../store';
 
+import PropTypes from 'prop-types';
+
 const CameraRig = ({ children }) => {
   const group = useRef();
   const snap = useSnapshot(state);
@@ -36,6 +38,10 @@ const CameraRig = ({ children }) => {
   });
 
   return <group ref={group}>{children}</group>;
+};
+
+CameraRig.propTypes = {
+  children: PropTypes.any.isRequired,
 };
 
 export default CameraRig;
