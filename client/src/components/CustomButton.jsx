@@ -37,7 +37,7 @@ CustomButton.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   customStyles: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
 
 export default CustomButton;

@@ -57,7 +57,9 @@ const Customizer = () => {
       setGeneratingImg(true);
       // // Make a POST request to the backend server
       const response = await axios.post(
-        'http://localhost:8080/api/v1/dalle/generate-image',
+        // 'http://localhost:8080/.netlify/functions/index/api/generate-image',
+        '/.netlify/functions/index/api/generate-image',
+
         {
           prompt: prompt,
         },
