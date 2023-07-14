@@ -33,9 +33,9 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
 };
 
 Tab.propTypes = {
-  tab: PropTypes.func.isRequired,
-  isFilterTab: PropTypes.func.isRequired,
-  isActiveTab: PropTypes.func.isRequired,
+  tab: PropTypes.object.isRequired,
+  isFilterTab: PropTypes.bool,
+  isActiveTab: PropTypes.bool,
   handleClick: PropTypes.func.isRequired,
 };
 
