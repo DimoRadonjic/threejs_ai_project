@@ -1,5 +1,14 @@
 import CustomButton from './CustomButton';
 
+import PropTypes from 'prop-types';
+
+AIPicker.propTypes = {
+  setPrompt: PropTypes.func.isRequired,
+  prompt: PropTypes.func.isRequired,
+  generatingImg: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
+
 const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
   return (
     <div className='aipicker-container'>
