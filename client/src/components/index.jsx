@@ -1,5 +1,5 @@
 import CustomButton from './CustomButton';
-import AIPicker from './AIPicker';
+import AIPicker from './AIPickerComponent';
 import ColorPicker from './ColorPicker';
 import FilePicker from './FilePicker';
 import Tab from './Tab';
