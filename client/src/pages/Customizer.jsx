@@ -10,7 +10,7 @@ import { downloadCanvasToImage, reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
 import {
-  AiPicker,
+  AIPicker,
   ColorPicker,
   CustomButton,
   FilePicker,
@@ -40,7 +40,7 @@ const Customizer = () => {
         return <FilePicker file={file} setFile={setFile} readFile={readFile} />;
       case 'aipicker':
         return (
-          <AiPicker
+          <AIPicker
             prompt={prompt}
             setPrompt={setPrompt}
             generatingImg={generatingImg}
