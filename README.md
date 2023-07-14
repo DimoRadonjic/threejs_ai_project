@@ -1,5 +1,5 @@
 
-# AI-Powered 3D Website Using React Three JS 
+# AI-Powered 3D Website Using React and Three JS 
 
 
 Introduction
