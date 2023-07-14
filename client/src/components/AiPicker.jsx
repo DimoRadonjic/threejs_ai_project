@@ -1,6 +1,6 @@
 import CustomButton from './CustomButton';
 
-const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
+const AiPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
   return (
     <div className='aipicker-container'>
       <textarea
@@ -39,4 +39,4 @@ const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
   );
 };
 
-export default AIPicker;
+export default AiPicker;
