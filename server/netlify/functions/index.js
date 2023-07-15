@@ -8,12 +8,10 @@ import dalleRoutes from './dalle.routes.js';
 dotenv.config();
 
 const app = express();
-// Create a router to handle routes
-const router = express.Router();
 app.use(cors());
 
 // Use the router to handle requests to the `/.netlify/functions/api` path
-app.use('/.netlify/functions/index/api/generate-image', dalleRoutes);
+app.use('/.netlify/functions/index/api', dalleRoutes);
 
 // Export the app and the serverless function
 export const handler = serverless(app);
