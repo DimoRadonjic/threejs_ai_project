@@ -8,7 +8,7 @@ dotenv.config();
 const router = express.Router();
 const jsonParser = bodyParser.json(); // Create JSON parser middleware
 
-router.route('/api/generate-image').post(jsonParser, async (req, res) => {
+router.route('/generate-image').post(jsonParser, async (req, res) => {
   const prompt = req.body.prompt;
 
   if (!prompt) {
