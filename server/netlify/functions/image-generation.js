@@ -52,4 +52,6 @@ exports.handler = async (event, context) => {
   };
 };
 
+exports.handler.path = '/generate-image';
+
 export { handler };
