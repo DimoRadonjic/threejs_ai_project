@@ -50,14 +50,14 @@ const Customizer = () => {
     }
   };
 
+  // type;
+
   const handleSubmit = async (type) => {
     if (!prompt) return alert('Please enter a prompt');
 
     try {
       setGeneratingImg(true);
-      // // Make a POST request to the backend server
       const response = await axios.post(
-        // 'http://localhost:8080/.netlify/functions/index/api/generate-image',
         '/.netlify/functions/generate-image',
 
         {
