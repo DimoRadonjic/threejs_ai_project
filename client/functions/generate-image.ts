@@ -1,8 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
 
-const apiKey = process.env.API_KEY;
-
 const handler: Handler = async (
   event: HandlerEvent,
   context: HandlerContext
@@ -22,7 +20,7 @@ const handler: Handler = async (
 
     const axiosConfig: AxiosRequestConfig<FormData> = {
       headers: {
-        'x-api-key': apiKey,
+        'x-api-key': process.env.API_KEY,
         'Content-Type': 'multipart/form-data',
       },
       responseType: 'arraybuffer',
