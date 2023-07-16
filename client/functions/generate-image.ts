@@ -25,7 +25,7 @@ const handler: Handler = async (
         'x-api-key': apiKey,
         'Content-Type': 'multipart/form-data',
       },
-      responseType: 'arraybuffer', // Set the response type to arraybuffer
+      responseType: 'arraybuffer',
     };
 
     const { data } = await axios.post(
