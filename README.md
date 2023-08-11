@@ -17,6 +17,5 @@ Learned to :
 - Make code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
 - Add custom color and file support.
 - Generate and use images through ClipDrop-AI
-- Download the resulting t-shirt model image
 - Ensure responsiveness across all devices and improve your site's performance
 
